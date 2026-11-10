@@ -1,7 +1,3 @@
-# Python dependencies for the Bank Term Deposit project
-# Chạy: pip install -r requirements.txt
-# Nên ghi đúng phiên bản nhóm đã dùng bằng: pip freeze > requirements_full.txt
-
 pandas
 numpy
 scikit-learn
