@@ -10,13 +10,7 @@ Course project — FPT University, Ho Chi Minh City.
 
 ## 1. Overview
 
-This project studies whether a bank can identify in advance which customers will subscribe to a term deposit, using the [UCI Bank Marketing dataset](https://doi.org/10.24432/C5K306
-        
-        
-        
-        )
-        
-         (41,188 records, only 11.27% positive).
+This project studies whether a bank can identify in advance which customers will subscribe to a term deposit, using the UCI Bank Marketing dataset (41,188 records, only 11.27% positive).
 
 Five classifiers — Logistic Regression, Decision Tree, Random Forest, XGBoost, and LightGBM — are compared under an identical **leakage-aware pipeline**: stratified train/validation/test split (64/16/20), mutual-information feature selection, scaling, and SMOTE + Tomek Links fitted only inside each cross-validation training fold.
 
@@ -41,9 +35,10 @@ Two parallel scenarios are evaluated:
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── data/                      # UCI Bank Marketing dataset
-├── notebooks/                 # Colab/Jupyter notebooks of the full pipeline
-└── report/                    # final report (PDF)
+├── data/                      # UCI Bank Marketing dataset (link or CSV)
+├── ADY201m.ipynb              # full pipeline: EDA, 5 models, tuning, threshold
+└── Bank_Term_Deposit_Subscription_Prediction....pdf   # final report (PDF)
+
 ```
 
 ## 4. How to run
@@ -57,16 +52,10 @@ Run the notebooks in `notebooks/` in order. All random states are fixed with `SE
 
 ## 5. Data
 
-- Source: UCI Machine Learning Repository — [Bank Marketing dataset](https://doi.org/10.24432/C5K306
-        
-        
-        
-        )
-        
-        , compiled from a Portuguese bank telemarketing campaign (May 2008 – Nov 2010).
+- Source: UCI Machine Learning Repository — [Bank Marketing dataset], compiled from a Portuguese bank telemarketing campaign (May 2008 – Nov 2010).
 - 41,188 rows × 20 input features + binary target `y` (11.27% positive).
 - No missing values; "unknown" is kept as a separate category.
 
 ## 6. Report
 
-The full written report is available in `report/` (PDF).
+Bank_Term_Deposit_Subscription_Prediction__A_Comparative_Study_of_Five_Machine_Learning_Models_on_Imbalanced_Telemarketing_Data.pdf in the repository root.
