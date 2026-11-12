@@ -35,9 +35,11 @@ Two parallel scenarios are evaluated:
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── data/                      # UCI Bank Marketing dataset (link or CSV)
-├── ADY201m.ipynb              # full pipeline: EDA, 5 models, tuning, threshold
-└── Bank_Term_Deposit_Subscription_Prediction....pdf   # final report (PDF)
+├── REPRODUCE.md              # reproduction guide
+├── LICENSE                   # MIT
+├── ADY201m.ipynb             # full pipeline
+├── bank-additional-full.csv  # UCI dataset (sha256 in REPRODUCE.md §5.3)
+└── Bank_Term_Deposit_...pdf  # final report (PDF)
 
 ```
 
